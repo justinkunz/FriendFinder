@@ -1,0 +1,34 @@
+.form-control{
+    width: 200px;
+}
+.jumbotron {
+    margin: 50px;
+}
+#imgLink {
+    width: 500px;
+}
+#submitBtn {
+    width:150px;
+}
+#modBod {
+    margin: 10px;
+}
+#viewImg {
+    width: 200px;
+    height: 200px;
+}
+#viewResBody {
+    text-align: center;
+}
+.frontLnk {
+    width:100px;
+    height:100px;
+    float:right;
+}
+
+#apiLogo {
+    width: 150px;
+}
+#back {
+    width: 100px;
+}
