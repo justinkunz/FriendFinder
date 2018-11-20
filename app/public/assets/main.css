@@ -32,3 +32,19 @@
 #back {
     width: 100px;
 }
+#homeJum {
+    background-image: url('https://hookagency.com/wp-content/uploads/2015/11/hazemaster-gray-gradient-ui-background.jpg');
+}
+body {
+    background: #29a4ef;
+    background-image: url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/J9H9WF0/blue-turquoise-gradient-polygon-shaped-background-zoomed-in-and-zoomed-out-in-one-motion_nj5dnqsrl__F0000.png');
+    background-repeat: no-repeat;
+    font-family: 'Ranga', cursive
+
+}
+h1 {
+    font-family: 'Kaushan Script', cursive;
+}
+.lead {
+    height: 20px;
+}
