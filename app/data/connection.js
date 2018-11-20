@@ -1,6 +1,8 @@
-module.exports = function () {
+function connect() {
 
     var sql = require('mysql')
+
+    //for connecting with JAWSDB for heroku deployment
     if (process.env.JAWSDB_URL) {
         conn = sql.createConnection(process.env.JAWSDB_URL)
     }
@@ -17,8 +19,7 @@ module.exports = function () {
         if (e) {
             console.log('error: ' + e.stack)
         }
-        else {
-            console.log('connected to sql as ID: ' + conn.threadId)
-        }
     });
 }
+
+module.exports = connect
