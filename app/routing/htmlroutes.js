@@ -10,6 +10,10 @@ module.exports = function (app) {
         res.sendFile(path.join(static, 'home.html'))
     });
 
+    app.get('/users', function (req, res) {
+        res.sendFile(path.join(static, 'all.html'))
+    });
+
     app.get('/:ast', function (req, res) {
         res.sendFile(path.join(static, 'assets',req.params.ast))
     });
