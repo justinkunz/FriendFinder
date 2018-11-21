@@ -3,7 +3,7 @@ require('../data/connection.js')()
 var logic = require('../logic/logic.js')
 
 function calls(app) {
- 
+
     //post call for new result
     app.post('/api/new_response', function (req, res) {
 
@@ -35,16 +35,17 @@ function calls(app) {
         })
     });
 
-    app.get('/api/answers', function(req, res){
+    //get data for specific user
+    app.get('/api/answers', function (req, res) {
         userId = req.headers.referer.split('/')[4]
-        console.log(userId)
         conn.query('select * from user_info where ?', {
             id: userId
-        }, function(err, data){
-            console.log(data)
+        }, function (err, data) {
+            if (err) throw err
             res.json(data)
         })
     })
 
 }
+
 module.exports = calls
