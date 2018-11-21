@@ -13,7 +13,7 @@
 #modBod {
     margin: 10px;
 }
-#viewImg, .userImg {
+#viewImg {
     width: 200px;
     height: 200px;
 }
@@ -26,9 +26,8 @@
     float:right;
 }
 
-#usersImg {
-    width:75px;
-    height: 100px;
+#apiLogo {
+    width: 150px;
 }
 #back {
     width: 100px;
