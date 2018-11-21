@@ -49,3 +49,12 @@ h1 {
 .lead {
     height: 20px;
 }
+.specAns {
+    font-size: 30px;
+    font-weight: bold;
+}
+#userPic {
+    height: 120px;
+    width: 120px;
+    float: right;
+}

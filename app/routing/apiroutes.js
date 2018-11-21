@@ -35,5 +35,16 @@ function calls(app) {
         })
     });
 
+    app.get('/api/answers', function(req, res){
+        userId = req.headers.referer.split('/')[4]
+        console.log(userId)
+        conn.query('select * from user_info where ?', {
+            id: userId
+        }, function(err, data){
+            console.log(data)
+            res.json(data)
+        })
+    })
+
 }
 module.exports = calls

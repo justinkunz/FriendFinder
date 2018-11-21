@@ -1,0 +1,117 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Matchmaker! - Questionaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel='shortcut icon' type='image/png' href='http://www.iconarchive.com/download/i62986/dapino/medical/heart-beat-no-sh.ico'>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Courgette|Kaushan+Script|Ranga" rel="stylesheet">
+    <script src="answers.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Personality Questionaire</h1>
+        <p class="lead">Rate the below statements on a scale of 1 (totally disagree) to 5 (totally agree)</p>
+        <hr class="my-4">
+        <div class="form-group">
+            <label for="nameInp">Your Name</label>
+            <input type="text" class="form-control" id="nameInp" placeholder="Jane Doe">
+        </div>
+        <div class="form-group">
+            <label for="imgLink">Link to your image</label>
+            <input type="text" class="form-control" id="imgLink" placeholder="http://google.com/images/jane_doe_profile.jpg">
+        </div>
+        <hr class="my-4">
+        <div class="form-group">
+            <label for="q1">You consider yourself adventurous</label>
+            <div id="q1"></div>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q2">You prefer planned date nights to spontanious nights</label>
+            <div id="q2"></div>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q3">You are a morning person</label>
+            <div id="q3"></div>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q4">You prefer staycactions to long distance travel</label>
+            <div id="q4"></div>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q5">You consider yourself romantic</label>
+            <div id="q5"></div>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q6">You are more introverted than extroverted</label>
+            <div id="q6"></div>
+
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q7">You like to stay on schedule</label>
+            <div id="q7"></div>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q8">You value honesty over anything else in a relationship</label>
+            <div id="q8"></div>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q9">You prefer socializing with large groups of people</label>
+            <div id="q9"></div>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="q10">You do well under pressure</label>
+            <div id="q10"></div>
+            </select>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="viewRes" tabindex="-1" role="dialog" aria-labelledby="viewResLab" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="viewResTi">We've found you a match!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="viewResBody">
+                        <img id="viewImg" src="http://via.placeholder.com/200">
+                        <div id="modBod">
+                            This is the modal side text
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="modBtn">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <button type="button" class="btn btn-info" id="submitBtn">Find My Soulmate!</button>
+    </div>
+</body>
+
+</html>
